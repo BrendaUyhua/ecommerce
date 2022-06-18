@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	</head>
+<body>
+    <header>
+        <div class="container logo-nav-container">
+            <a href="index.html"><img src="espartan_final.png" alt="logo de la compañia"></a>
+            <nav class="navigation">
+                <ul>    
+                    <li><a class="link-nav" href="#">SEDE</a></li>
+                    <li><a class="link-nav" href="#">PLANES</a></li>
+                    <li><a class="link-nav" href="#">CLASES</a></li>
+                    <li><a class="fas fa-shopping-cart icon" style= "color:white;" href="inicio.html"></a></li>
+                    <a href="inicio.html"><li><i class="fas fa-user-circle icon" style= "color:white;"><e style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;"> MI CUENTA</e></i></li></a>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+
+
+    <form action="login.php" method="post" class="formulario">
+
+        <h1>Inicia Sesion</h1>
+     <div class="contenedor">
+         
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input type="text" name="usuario" placeholder="Correo Electronico">
+         
+         </div>
+         
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+         <input type="password" name="pass" placeholder="Contraseña">
+         
+         </div>
+         <input type="submit" value="INGRESAR" class="button">
+         <p>¿No tienes una cuenta?<a class="link" href="regitrar.html">Registrate</a></p>
+     </div>
+       </form>
+    
+</body>
+</html>
