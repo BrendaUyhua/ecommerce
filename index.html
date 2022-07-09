@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Principal</title>
     <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilos/estilo-encabezado.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
@@ -11,16 +16,16 @@
     <link rel="stylesheet" type="text/css" href="fontello.css">
 </head>
 <body>
-<header>
+<header id="main-header">
         <div class="logo">
         <a href="index.html"><img src="imagenes/espartan_final.png" alt=""></a>
         </div>
          <nav class="navigation">  
                 <a href="" class="link-nav" href="#">SEDE</a>
-                 <a href="" class="link-nav" href="#">PLANES</a>
+                 <a href="#planes" class="link-nav" href="#">PLANES</a>
                 <a href="" class="link-nav" href="#">CLASES</a>
                 <a href="" class="fas fa-shopping-cart icon" style= "color:black;" href="inicio.html"></a>
-                <a href="inicio.html"><i class="fas fa-user-circle icon" style= "color:black;"><e style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: large;"> MI CUENTA</e></i></a>
+                <a href="inicio.html"><i class="fas fa-user-circle icon" style= "color:black;"><e style="font-family: 'Anton', sans-serif"> MI CUENTA</e></i></a>
          </nav>
 </header> 
 <ssection>        
@@ -48,42 +53,62 @@
     </div>
 </div> 
 </section>
-<section>
-    <div class="title">Nuestros Planes</div>
+<section class="planes" id="planes">
+    <div class="title"><img src="imagenes/titulo.jpg" id="imgcard"></div>
     <div class="row">
         <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">PLAN MAX TOTAL</h5>
+              <p class="card-text">S/. 150</p>  
+              <p class="card-text-2" style="font-family: Arial;">Beneficios Incluidos</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Vestidores</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Lockers</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Área de peso libre, peso integrado, cardio y clases grupales</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Acceso a todas las áreas del gimnasio</p>
+              <a href="#" class="btn btn-primary" id="boton">AFILIATE YA!</a>
             </div>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">PLAN ORO</h5>
+              <p class="card-text">S/. 130</p>
+              <p class="card-text-2" style="font-family: Arial;">Beneficios Incluidos</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Vestidores</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Lockers</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Área de peso libre, peso integrado, cardio y clases grupales</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Acceso a todas las áreas del gimnasio</p>
+              <a href="#" class="btn btn-primary">AFILIATE YA!</a>
             </div>
-          </div>
+          </div>    
         </div>
         <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+                <h5 class="card-title">PLAN PLATINIUM</h5>
+                <p class="card-text">S/. 110</p>
+                <p class="card-text-2" style="font-family: Arial;">Beneficios Incluidos</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Vestidores</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Lockers</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Área de peso libre, peso integrado, cardio y clases grupales</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Acceso a todas las áreas del gimnasio</p>
+              <a href="#" class="btn btn-primary" id="btn1">AFILIATE YA!</a>
+              </div>    
             </div>
           </div>
           <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">PLAN BASICO</h5>
+                <p class="card-text">S/. 90</p>
+                <p class="card-text-2" style="font-family: Arial;">Beneficios Incluidos</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Vestidores</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Lockers</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Área de peso libre, peso integrado, cardio y clases grupales</p>
+              <p class="card-text-2" style="font-family: Arial;"><i class="fas fa-check"></i> Acceso a todas las áreas del gimnasio</p>
+                <a href="#" class="btn btn-primary" id="btn1">AFILIATE YA!</a>
               </div>
             </div>
           </div>

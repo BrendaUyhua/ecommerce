@@ -1,35 +1,26 @@
-var imag = ['imagenes/banner.jpg','imagenes/banner2.jpg','imagenes/esparta_final.png'],
-cont = 0;
+document.getElementById("btn_open").addEventListener("click",open_close_menu);
 
-function carrousel(contenedors){
-    contenedors.addEventListener('click', e =>{
-    let atras = contenedors.querySelector('.atras'),
-        adelante = contenedors.querySelector('.adelante'),
-        img = contenedors.querySelector('imagenes'),
-        tgt = e.target;
+var side_menu = document.getElementById("side_menu");
+var btn_open = document.getElementById("btn_open");
+var body = document.getElementById("body");
 
-        if(tgt == atras){
-            if(cont > 0){
-                img.src = imag[cont - 1];
-                cont--;
-            } else {
-                img.src = imag [imag.length - 1];
-                cont = imag.length - 1;
-            }
-        } else if(tgt == adelante){
-            if(cont < imag.length - 1){
-                img.src = imag[cont + 1];
-                cont++;
-            } else {
-                img.src = imag [0];
-                cont = 0;
-            }
-        }
-
-    } );
+function open_close_menu(){
+    body.classList.toggle("body__move");
+    side_menu.classList.toggle("menu__side_move");
 }
 
-document.addEventListener("DOMContentLoaded",()=>{
-    let contenedor = document.querySelector('.contenedors');
-    carrousel (contenedor);
-})
+if (window.innerWidth < 760){
+    body.classList.add("body__move");
+    side_menu.classList.add("menu__side_move");
+}
+
+window.addEventListener("resize", function(){
+    if(window.innerWidth > 760 ){
+        body.classList.remove("body__move");
+        side_menu.classList.remove("menu__side_move");
+        }
+if(window.innerWidth < 760 ){
+    body.classList.add("body__move");
+    side_menu.classList.add("menu__side_move");
+    }
+});
