@@ -28,7 +28,7 @@ body {
     padding: 2px;
 }
 
-h1{
+ h1{
     text-align: center;
     color: #1a2537;
     font-size: 40px;
@@ -72,6 +72,8 @@ select {
 p{
     text-align: center;
 }
+
+
 
 @media(min-width:760px)
 {
